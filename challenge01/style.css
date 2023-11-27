@@ -26,7 +26,12 @@ body {
   color: white;
 
   width: 50%;
+  max-width: 750px;
   margin: 0 auto;
 
   padding: 2em;
+}
+
+.intro-content {
+  width: 50%;
 }
