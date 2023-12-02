@@ -1,11 +1,7 @@
 /* 
 ////// For this challenge ///////
 
-- All text is in the JS section
-  this pen
-- Use this code for the image
-  (not the same image!)
-  <img src="https://unsplash.it/386/292" alt="">
+- All text is in the text.md file
 
 // Requirements
 1. Refer to the design specs for the
@@ -22,6 +18,16 @@
   box-sizing: border-box;
 }
 
+/* || util */
+.--text-width {
+  width: 62%;
+}
+
+.--lh {
+  line-height: 1.5;
+}
+
+/* || global styles */
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -46,7 +52,8 @@ h1 {
 .row {
   /* display: flex => flex container */
   display: flex;
-  justify-content: space-between;
+  gap: 2em;
+  /* justify-content: flex-end; */
 
   /* can't use yet */
   /* gap: 100px; */
@@ -67,13 +74,16 @@ h1 {
   color: #fff;
 }
 
-.hero__text {
+/* .hero__text {
   width: 62%;
-}
+} */
 
 .hero__img {
-  width: 32%;
-  align-self: flex-start;
+  width: 40%;
+  /* margin-left: 0.75em; */
+  /* gap: 1em; */
+  /* width: 100%; */
+  /* align-self: flex-start; */
 }
 
 .hero p {
@@ -94,4 +104,29 @@ h1 {
 .btn:hover,
 .btn:focus {
   opacity: 0.75;
+}
+
+.bottom-section {
+  padding: 3em 0;
+}
+
+.bottom-section__text h1 {
+  font-size: 2.25rem;
+  color: #136c72;
+}
+
+.left-side-flex {
+  width: 40%;
+  background-color: #136c72;
+  color: white;
+  padding: 2em 1em;
+  text-align: center;
+}
+
+.left-side-flex h1 {
+  font-size: 2.25rem;
+}
+
+.flex-item + .flex-item {
+  margin-top: 4em;
 }
