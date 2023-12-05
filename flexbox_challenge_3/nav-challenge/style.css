@@ -74,10 +74,27 @@ header {
   padding: 0.5em 0;
 }
 
+.logo {
+  margin-right: 1em;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
 .nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav__list--primary {
+  margin: 0 auto;
 }
 
 .nav__link {
