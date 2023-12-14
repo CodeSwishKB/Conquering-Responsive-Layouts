@@ -1,0 +1,92 @@
+/* || FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap');
+
+/* || VARIABLES */
+:root{
+    /* colors */
+    --clr-secodary-900: #3B4050;
+    --clr-primary-800: #2E323F;
+    --clr-neutral-700: #6F737F;
+    --clr-neutral-600: #A59678;
+    --clr-neutral-100: #FFFFFF;
+    
+    /* font family */
+    --ff-primary: 'Montserrat', sans-serif;
+    --ff-secondary: 'Oswald', sans-serif;
+
+    /* font size */
+    --fs-100: 1rem;
+    --fs-200: 1.125rem;
+    --fs-300: 1.3125rem;
+    --fs-400: 1.5rem;
+    --fs-500: 1.875rem;
+    --fs-600: 6rem;
+
+    /* font weight */
+    --fw-100: 400;
+    --fw-200: 700;
+}
+
+/* || RESET */
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* || GLOBAL SYTLE */
+body{
+    font-family: var(--ff-primary);
+}
+
+.container{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+li{
+    list-style-type: none;
+}
+
+img{
+    max-width: 100%;
+    width: 100px;
+}
+
+header{
+    background-color: var(--clr-secodary-900);
+    text-align: center;
+    padding: 1.5em;
+}
+
+.navbar-toggle{
+    background-color: transparent;
+    color: var(--clr-neutral-600);
+    border: none;
+    width: 3em;
+    height: 5em;
+}
+
+.hamburger{
+    display: block;
+    margin: 0 auto;
+    height: 5px;
+}
+
+
+/* MEDIUM - 700px => em */
+@media (min-width: 43.75em){
+    .row{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/* LARGE - 1000px => em */
+@media (min-width: 62.5em){
+
+}
